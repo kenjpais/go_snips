@@ -1,4 +1,4 @@
-package main
+package interfaceSegregation
 
 type Document struct{}
 

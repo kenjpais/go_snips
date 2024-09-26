@@ -1,4 +1,4 @@
-package main
+package liskov_substitution_principle
 
 import "fmt"
 
@@ -45,7 +45,7 @@ func UseIt(size Sized) {
 	fmt.Printf("Area:%d", actualArea)
 }
 
-func testShapes() {
+func TestShapes() {
 	r := NewRectangle(1, 2, 3)
 	s := NewSquare(1)
 	fmt.Print(r, s)
