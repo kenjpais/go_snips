@@ -1,0 +1,6 @@
+[submodule "designpatterns/Design-Patterns-in-Go"]
+	path = designpatterns/Design-Patterns-in-Go
+	url = https://github.com/MilovanTomasevic/Design-Patterns-in-Go.git
+[submodule "concurrency"]
+	path = concurrency
+	url = https://github.com/geisonsn/trevor-sawler-working-with-concurrency.git
