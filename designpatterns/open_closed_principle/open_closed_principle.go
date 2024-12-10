@@ -1,4 +1,4 @@
-package open_closed_principle
+package main
 
 import "fmt"
 
@@ -50,7 +50,7 @@ func (f *Filter) Filter(products []Product, spec Specification) []*Product {
 	return result
 }
 
-func TestOpenClosed() {
+func main() {
 	apple := Product{"Apple", green, small}
 	tree := Product{"Tree", green, large}
 	house := Product{"House", green, large}

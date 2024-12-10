@@ -1,4 +1,4 @@
-package interfaceSegregation
+package main
 
 type Document struct{}
 
@@ -31,7 +31,7 @@ func (p *Photocopier) Scan(d Document) {
 func Fax(d Document) {
 }
 
-func test() {
+func main() {
 	var d Document
 	ph := Photocopier{}
 	ph.Print(d)

@@ -1,4 +1,4 @@
-package builder
+package main
 
 import "fmt"
 
@@ -116,7 +116,7 @@ func (ab *AddressBuilder) Build() *Address {
 }
 
 // TestBuilder to test the builder pattern
-func TestBuilder() {
+func main() {
 	// Testing PersonBuilder
 	pb := NewPersonBuilder()
 	pb.

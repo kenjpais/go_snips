@@ -1,4 +1,4 @@
-package factory
+package main
 
 import "fmt"
 
@@ -17,7 +17,7 @@ func NewEmployeeFactory(position string,
 	}
 }
 
-func TestFactory() {
+func main() {
 	developerFactory := NewEmployeeFactory("developer", 6000)
 	managerFactory := NewEmployeeFactory("manager", 9000)
 	developer := developerFactory("Adam")

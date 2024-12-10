@@ -1,0 +1,58 @@
+package main
+
+import (
+	"fmt"
+)
+
+/*
+Circle, square
+Raster, Vector
+
+Comb : CR, CV, SR, SV (Cartesion product)
+
+*/
+
+type Renderer interface {
+	RenderCircle(radius float32)
+}
+
+type VectorRenderer struct {
+}
+
+func (v *VectorRenderer) RenderCircle(radius float32) {
+	fmt.Println("Vector: Drawing a circle of radius:", radius)
+}
+
+type RasterRenderer struct {
+	Dpi int
+}
+
+func (r *RasterRenderer) RenderCircle(radius float32) {
+	fmt.Println("Raster: Drawing a circle of radius:", radius)
+}
+
+type Circle struct {
+	renderer Renderer
+	radius   float32
+}
+
+func (c *Circle) Draw() {
+	c.renderer.RenderCircle(c.radius)
+}
+
+func NewCircle(renderer Renderer, radius float32) *Circle {
+	return &Circle{renderer: renderer, radius: radius}
+}
+
+func (c *Circle) Resize(factor float32) {
+	c.radius *= factor
+}
+
+func main() {
+	vector := VectorRenderer{}
+	circle := NewCircle(&vector, 5)
+	circle.Draw()
+	raster := RasterRenderer{}
+	circle = NewCircle(&raster, 5)
+	circle.Draw()
+}
