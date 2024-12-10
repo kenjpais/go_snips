@@ -1,0 +1,7 @@
+go 1.18
+
+use (
+	./01-goroutines
+	./02-wait-group
+	./03-wait-group-tests
+)

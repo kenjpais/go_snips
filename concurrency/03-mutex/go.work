@@ -1,0 +1,7 @@
+go 1.18
+
+use (
+	./01-updatemsg-with-race-condition
+	./02-balance-without-race-condition
+	./03-producer-consumer-problem
+)

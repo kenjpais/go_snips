@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "02-goroutines-wait-groups"
+		},
+		{
+			"path": "03-mutex"
+		},
+		{
+			"path": "04-dining-philosophers-problem"
+		},
+		{
+			"path": "05-channels-sleeping-barber-problem"
+		},
+		{
+			"path": "06-final-project"
+		}
+	],
+	"settings": {
+		"makefile.extensionOutputFolder": "./.vscode"
+	}
+}

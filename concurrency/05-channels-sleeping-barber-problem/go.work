@@ -1,0 +1,8 @@
+go 1.18
+
+use (
+	./01-introduction
+	./02-channel-select
+	./03-buffered-channels
+	./04-sleeping-barber
+)

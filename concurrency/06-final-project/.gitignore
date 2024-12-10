@@ -1,0 +1,6 @@
+myapp
+**/*.out
+
+**/db-data/*
+**/tmp/*
+!*.gitkeep
